@@ -101,6 +101,23 @@ Trying to replace these files while the app is running is a terrible idea, akin 
 
 3. Uncompress the backup file, and rename it to `com.elgato.StreamDeck`
 
+## Questions/Comments/FAQs/etc
+
+### “These files are cluttering up my Desktop! How can I have them saved somewhere else?!?”
+
+I use [Hazel](https://www.noodlesoft.com) to move them from my Desktop to somewhere else, but if you want them to go somewhere else directly, edit the `backupstreamdeck.sh` script using a text editor (such as TextEdit, BBEdit, not Pages or Word) and change this line:
+
+```text
+	BACKUP_TO="$HOME/Desktop"
+```
+
+For example, if you had a folder called "Stream Deck Backups" in your Home folder, you would change that to
+
+```text
+	BACKUP_TO="$HOME/Stream Deck Backups"
+```
+
+Note that if your designated `BACKUP_TO` does not exist, the script will fall back to the Desktop. And if the Desktop folder doesn’t exist (which I don’t even think is possible, but anyway…) then it will fall back to `$HOME`. If your `$HOME` doesn’t exist, well, you have more problems than I can help with.
 
 ## No Warranty Expressed or Implied
 
