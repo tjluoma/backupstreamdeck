@@ -1,6 +1,10 @@
 # backupstreamdeck
 
-Mac shell script to backup Stream Deck configuration files
+TL;DR: Mac shell script to backup [Stream Deck](https://www.elgato.com/en/stream-deck) configuration files.
+
+_(Note: This script is not produced by Elgato, makers of the Stream Deck. It is not endorsed or recommended by them. It is made by some random guy on the Internet who likes the Stream Deck. See additional disclaimer (below) and [License](LICENSE.txt) for more.)_
+
+----
 
 This script backs up two things:
 
